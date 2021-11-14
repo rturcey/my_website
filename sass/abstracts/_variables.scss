@@ -1,0 +1,6 @@
+$primary-color: #A3815F;
+$second-color: adjust_hue($primary-color, 120);
+$third-color: complement($primary-color);
+$fourth-color: adjust_hue($second-color, 120);
+
+$main-font: 'Poppins', sans-serif;

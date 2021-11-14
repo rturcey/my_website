@@ -1,0 +1,17 @@
+.button {
+  background-color: $second-color;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: $main-font;
+  font-size: 1.5rem;
+  padding: 5px 50px;
+  &--hire {
+    margin-top: 20px;
+    opacity: 0;
+    &:hover {
+      cursor: pointer;
+      background-color: darken($second-color, 15%);
+    }
+  }
+}

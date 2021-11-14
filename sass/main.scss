@@ -1,0 +1,32 @@
+@import "./abstracts/variables";
+@import "./base/typography";
+@import "./layout/navbar";
+@import "./pages/home";
+@import "./pages/about";
+@import "./components/buttons";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  @media screen and (min-height: 800px){
+    overflow-y: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    overflow-y: scroll;
+  }
+  background-color: black;
+}
+
+router-view {
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
