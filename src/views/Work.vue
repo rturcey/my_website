@@ -3,6 +3,12 @@
     <div class="slider_arrow" @click="decrementCount">
       <img class="slider-arrow__img" :src="getImgUrl('sliderarrow_left.png')" />
     </div>
+    <div v-if="width < 768" class="slider_arrow" @click="incrementCount">
+      <img
+        class="slider-arrow__img"
+        :src="getImgUrl('sliderarrow_right.png')"
+      />
+    </div>
     <div class="work-card">
       <div class="work-img-wrap">
         <img class="work-card__img" :src="getImgUrl(workCards[count].path)" />
@@ -36,7 +42,7 @@
         >
       </div>
     </div>
-    <div class="slider_arrow" @click="incrementCount">
+    <div v-if="width >= 768" class="slider_arrow" @click="incrementCount">
       <img
         class="slider-arrow__img"
         :src="getImgUrl('sliderarrow_right.png')"
@@ -47,7 +53,7 @@
 
 <script lang="ts">
 declare function require(name: string): string;
-import { defineComponent } from "vue";
+import { ref, defineComponent, onMounted, computed } from "vue";
 
 interface Icons {
   name: string;
@@ -208,6 +214,24 @@ export default defineComponent({
         this
       );
     },
+  },
+  setup() {
+    const windowWidth = ref(window.innerWidth);
+    const windowHeight = ref(window.innerHeight);
+
+    const onResize = () => {
+      windowWidth.value = window.innerWidth;
+      windowHeight.value = window.innerHeight;
+    };
+
+    onMounted(() => {
+      window.addEventListener("resize", onResize);
+    });
+
+    return {
+      width: computed(() => windowWidth.value),
+      height: computed(() => windowHeight.value),
+    };
   },
 });
 </script>

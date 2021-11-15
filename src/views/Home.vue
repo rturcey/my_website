@@ -16,7 +16,7 @@
       <span class="home__txt home__txt--would"
         >Would you be my first company ?</span
       >
-      <button class="button button--hire">yes!</button>
+      <router-link class="button button--hire" to="/contact">yes!</router-link>
     </div>
     <div class="footer">
       <div v-for="icon in icons" :key="icon.key" class="footer__wrap">

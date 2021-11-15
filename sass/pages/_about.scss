@@ -41,6 +41,10 @@
   gap: 0.7rem;
   align-self: flex-end;
   margin-top: 50%;
+  &--contact {
+    margin-top: 0;
+    align-self: center;
+  }
   @media screen and (max-width: 1024px) {
     flex-direction: row;
     align-self: center;

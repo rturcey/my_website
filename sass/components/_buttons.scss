@@ -6,11 +6,19 @@
   font-family: $title-font;
   font-size: 1.5rem;
   padding: 5px 50px;
+  cursor: pointer;
   &--hire {
     margin-top: 20px;
     opacity: 0;
+    text-decoration: none;
     &:hover {
-      cursor: pointer;
+      background-color: darken($second-color, 15%);
+    }
+  }
+  &--contact-form {
+    color: white;
+    margin-top: 1rem;
+    &:hover {
       background-color: darken($second-color, 15%);
     }
   }
