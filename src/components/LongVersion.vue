@@ -1,13 +1,14 @@
 <template>
   <div class="about-text">
     <div class="about-text__text-more">
-      I'm a 27 years old french junior developer, and I live in
-      Bayonne. I'm searching for a 6 months
+      I'm a 27 years old french junior developer, and I live in Bayonne. I'm
+      searching for a 6 months
       <span class="about-text--highlight">internship</span> or a
       <span class="about-text--highlight">first job</span>, ideally in
       <span class="about-text--highlight">remote</span>, as
       <span class="about-text--highlight">front end</span> or
-      <span class="about-text--highlight">full stack</span> developer.<br /><br />
+      <span class="about-text--highlight">full stack</span>
+      developer.<br /><br />
       I love to <span class="about-text--highlight">discover</span>,
       <span class="about-text--highlight">learn</span>,
       <span class="about-text--highlight">share</span>, express myself with
@@ -16,13 +17,16 @@
 
       I'm a
       <span class="about-text--highlight">self-taught</span> person, and that's
-      how I learned to compose music, play instruments, and that's why I chose to
-      train at
-      <a href="https://42.fr/" class="about-text--highlight about-text__link"
+      how I learned to compose music, play instruments, and that's why I chose
+      to train at
+      <a
+        target="_blank"
+        href="https://42.fr/"
+        class="about-text--highlight about-text__link"
         >42 school</a
       >
-      in Paris since 2019, where programming is taught by practical lessons, based
-      on the principles of
+      in Paris since 2019, where programming is taught by practical lessons,
+      based on the principles of
       <span class="about-text--highlight">sharing</span>,
       <span class="about-text--highlight">collaboration</span> and
       <span class="about-text--highlight">mutual aid</span>, but also
@@ -35,11 +39,11 @@
       <span class="about-text--highlight">adaptability</span> and
       <span class="about-text--highlight">organization</span> skills, having a
       <span class="about-text--highlight">critical mind</span> and
-      <span class="about-text--highlight">making decisions</span>, solving
+      <span class="about-text--highlight">make decisions</span>, solving
       problems with <span class="about-text--highlight">inventiveness</span> and
-      <span class="about-text--highlight">humility</span>. My vocation has always
-      been to express myself with languages, and study them - my native one as
-      well as code and music.<br /><br />
+      <span class="about-text--highlight">humility</span>. My vocation has
+      always been to express myself with languages, and study them - my native
+      one as well as code and music.<br /><br />
 
       When not coding, I like to write, read, make or listen to music, run,
       practice yoga and cook. I am interested in the animal condition, ecology,
@@ -116,10 +120,10 @@ export default {
       frontIcons: [
         { name: "Typescript", path: "typescript.svg" },
         { name: "Javascript", path: "javascript.svg" },
+        { name: "Vue.js", path: "vuejs.svg" },
         { name: "HTML5", path: "html.svg" },
         { name: "CSS3", path: "css.svg" },
         { name: "Sass", path: "sass.svg" },
-        { name: "Vue.js", path: "vuejs.svg" },
       ],
       backIcons: [
         { name: "Node.js", path: "nodejs.svg" },

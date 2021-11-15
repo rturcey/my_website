@@ -28,6 +28,7 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
 declare function require(name: string): string;
 
 interface Icons {
@@ -39,20 +40,17 @@ interface State {
   icons: Icons[];
 }
 
-export default {
+export default defineComponent({
   name: "Home",
-  title (): string {
-    return `Richard Turcey - ${this.name}`;
-  },
   data(): State {
     return {
       icons: [
         { name: "Typescript", path: "typescript.png" },
         { name: "Javascript", path: "javascript.png" },
+        { name: "Vue.js", path: "vuejs.png" },
         { name: "HTML5", path: "html.png" },
         { name: "CSS3", path: "css.png" },
         { name: "Sass", path: "sass.png" },
-        { name: "Vue.js", path: "vuejs.png" },
         { name: "Node.js", path: "nodejs.png" },
         { name: "NestJS", path: "nestjs.png" },
         { name: "npm", path: "npm.png" },
@@ -101,7 +99,7 @@ export default {
       return require(`../assets/${name}`);
     },
   },
-};
+});
 </script>
 
 <style lang="scss"></style>

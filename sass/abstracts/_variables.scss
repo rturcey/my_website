@@ -1,6 +1,7 @@
-$primary-color: #A3815F;
+$primary-color: #a3815f;
 $second-color: adjust_hue($primary-color, 120);
 $third-color: complement($primary-color);
 $fourth-color: adjust_hue($second-color, 120);
 
-$main-font: 'Poppins', sans-serif;
+$title-font: "Poppins", sans-serif;
+$main-font: "Cantarell", sans-serif;

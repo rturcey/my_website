@@ -1,8 +1,11 @@
 @import "./abstracts/variables";
 @import "./base/typography";
+@import "./base/animations";
 @import "./layout/navbar";
+@import "./layout/slider";
 @import "./pages/home";
 @import "./pages/about";
+@import "./pages/work";
 @import "./components/buttons";
 
 * {

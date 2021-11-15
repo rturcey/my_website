@@ -1,33 +1,58 @@
 <template>
   <div class="about-text about-text--short">
-      <div>
-        <span class="about-text--highlight about-text--highlight--short">I am</span><br>
-        27 · French · Bayonne (64)<br><br>
-          <span class="about-text--highlight about-text--highlight--short">searching for</span>
-        <ul>
-          <li>6 months internship or first job</li>
-          <li>Front end or full stack (JS/TS)</li>
-        </ul>
-      </div>
-      <div>
-        <span class="about-text--highlight about-text--highlight--short">Guidelines</span><br>
-          discover · learn · share · be creative<br><br>
-        <span class="about-text--highlight about-text--highlight--short">Hobbies / Interests</span><br>
-        write · read · play compose & listen to music · yoga · run · cook · ecology · design<br><br>
-      </div>
-      <div>
-        <span class="about-text--highlight about-text--highlight--short">I currently</span><br>
-        <span class="about-text--highlight">am a <a href="https://42.fr/" class="about-text__link">42 Paris</a> student, since 2019</span><br>
-        <span class="about-text--highlight about-text--highlight--skills">soft skills:</span><br>
-          sharing · collaboration · mutual aid · autonomy · self-discipline · curiosity · tenacity · patience · accountability
-      </div>
-      <div>
-        <span class="about-text--highlight about-text--highlight--short">I was</span><br>
-        <span class="about-text--highlight">a french and literature teacher</span><br>
-        <span class="about-text--highlight about-text--highlight--skills">soft skills:</span><br>
-          good communication · adaptability · organization · critical mind · making decisions · inventiveness · humility
-      </div>
-
+    <div>
+      <span class="about-text--highlight about-text--highlight--short"
+        >I am</span
+      ><br />
+      27 · French · Bayonne (64)<br /><br />
+      <span class="about-text--highlight about-text--highlight--short"
+        >searching for</span
+      >
+      <ul>
+        <li>6 months internship or first job</li>
+        <li>Front end or full stack (JS/TS)</li>
+      </ul>
+    </div>
+    <div>
+      <span class="about-text--highlight about-text--highlight--short"
+        >Guidelines</span
+      ><br />
+      discover · learn · share · be creative<br /><br />
+      <span class="about-text--highlight about-text--highlight--short"
+        >Hobbies / Interests</span
+      ><br />
+      write · read · play compose & listen to music · yoga · run · cook ·
+      ecology · design<br /><br />
+    </div>
+    <div>
+      <span class="about-text--highlight about-text--highlight--short"
+        >I currently</span
+      ><br />
+      <span class="about-text--highlight"
+        >am a
+        <a target="_blank" href="https://42.fr/" class="about-text__link"
+          >42 Paris</a
+        >
+        student, since 2019</span
+      ><br />
+      <span class="about-text--highlight about-text--highlight--skills"
+        >soft skills:</span
+      ><br />
+      sharing · collaboration · mutual aid · autonomy · self-discipline ·
+      curiosity · tenacity · patience · accountability
+    </div>
+    <div>
+      <span class="about-text--highlight about-text--highlight--short"
+        >I was</span
+      ><br />
+      <span class="about-text--highlight">a french and literature teacher</span
+      ><br />
+      <span class="about-text--highlight about-text--highlight--skills"
+        >soft skills:</span
+      ><br />
+      good communication · adaptability · organization · critical mind · make
+      decisions · inventiveness · humility
+    </div>
 
     <div class="about-techno about-techno--short">
       <span class="about-techno__title">Front</span>
@@ -98,10 +123,10 @@ export default {
       frontIcons: [
         { name: "Typescript", path: "typescript.svg" },
         { name: "Javascript", path: "javascript.svg" },
+        { name: "Vue.js", path: "vuejs.svg" },
         { name: "HTML5", path: "html.svg" },
         { name: "CSS3", path: "css.svg" },
         { name: "Sass", path: "sass.svg" },
-        { name: "Vue.js", path: "vuejs.svg" },
       ],
       backIcons: [
         { name: "Node.js", path: "nodejs.svg" },
