@@ -56,12 +56,9 @@
         @expired="callbackExpired()"
         @fail="callbackFail()"
       />
-      <input
-        data-sitekey="your_site_key"
-        data-callback="onSubmit"
-        class="g-recaptcha button button--contact-form"
+      <input class="button button--contact-form"
         type="submit"
-        value="Send"
+        :value="buttonText"
       />
     </form>
   </div>
@@ -80,6 +77,7 @@ interface Icons {
 
 interface State {
   socialIcons: Icons[];
+  buttonText: string;
 }
 
 export default defineComponent({
@@ -90,8 +88,13 @@ export default defineComponent({
       return require(`../assets/${name}`);
     },
 
+    resetForm(form: HTMLFormElement): void {
+      form.reset();
+    },
+
     sendEmail(): void {
-      const inputs = document.querySelectorAll(".contact-form__input");
+
+      const button = document.querySelector(".button--contact-form");
 
       emailjs
         .sendForm(
@@ -102,11 +105,17 @@ export default defineComponent({
         )
         .then(
           (res) => {
-            inputs.forEach((input) => input.setAttribute("value", ""));
             console.log(res.text);
+            if (button)
+              button.classList.add("button--contact-form--sent");
+            this.buttonText = "Sent!";
+            this.resetForm(this.$refs.form as HTMLFormElement);
           },
           (err) => {
             console.log(err.text);
+            if (button)
+              button.classList.add("button--contact-form--err");
+            this.buttonText = "Error :-(";
           }
         );
     },
@@ -135,6 +144,7 @@ export default defineComponent({
           url: "https://www.youtube.com/c/richardturcey",
         },
       ],
+      buttonText: "Send",
     };
   },
   mounted: function (): void {
