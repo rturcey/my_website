@@ -4,13 +4,13 @@
     <ul class="nav-links">
       <li class="nav-list" v-for="link in navLinks" :key="link.key">
         <div class="nav-link-wrapper">
-          <router-link class="nav-list__link" :to="link.to">
+          <router-link @click="openMobileNav" class="nav-list__link" :to="link.to">
             {{ link.name }}
           </router-link>
         </div>
       </li>
     </ul>
-    <div v-on:click="openMobileNav()" class="burger">
+    <div v-on:click="openMobileNav" class="burger">
       <div class="burger__line burger__line--1"></div>
       <div class="burger__line burger__line--2"></div>
       <div class="burger__line burger__line--3"></div>
