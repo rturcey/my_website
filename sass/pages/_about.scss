@@ -88,8 +88,9 @@
     padding: 2rem 4rem;
   }
   @media screen and (max-width: 768px) {
-    padding: 0;
-    grid-template: 80% 20% / 100%;
+    padding: 1rem;
+    height: 1100px;
+    grid-template: 90% 10% / 100%;
   }
   &--short {
     text-align: left;
