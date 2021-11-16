@@ -165,7 +165,7 @@ export default defineComponent({
         workCard.setAttribute("style", "");
         workCard.setAttribute(
           "style",
-          "animation: rightSlide 1s ease forwards"
+          "animation: rightSlide 0.8s ease forwards"
         );
       }
 
@@ -177,13 +177,13 @@ export default defineComponent({
             workCard.setAttribute("style", "");
             workCard.setAttribute(
               "style",
-              "animation: newRightSlide 1s ease forwards"
+              "animation: newRightSlide 0.8s ease forwards"
             );
           }
           vm.count++;
           if (vm.count == 4) vm.count = 0;
         },
-        500,
+        800,
         this
       );
     },
