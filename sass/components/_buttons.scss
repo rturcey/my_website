@@ -18,8 +18,22 @@
   &--contact-form {
     color: white;
     margin-top: 1rem;
+    background-color: $third-color;
     &:hover {
-      background-color: darken($second-color, 15%);
+      background-color: darken($third-color, 15%);
+    }
+    &--err {
+      content: 'Error';
+      background-color: $fourth-color;
+      &:hover {
+        background-color: $fourth-color;
+      }
+    }
+    &--sent {
+      background-color: $second-color;
+      &:hover {
+        background-color: $second-color;
+      }
     }
   }
 }
