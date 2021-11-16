@@ -116,7 +116,7 @@ export default defineComponent({
           name: "Ft_Transcendence",
           path: "transcendence.png",
           url: "https://github.com/42esoulard/42_ft_transcendence",
-          text: "A pong contest website, with a chat, an admin view, real-time multiplayer online games and user accounts (work in progress, in group).",
+          text: "A pong contest website, with a chat, an admin view, real-time multiplayer online games and user accounts (work in progress, team project).",
         },
         {
           name: "Webserv",

@@ -5,7 +5,7 @@
       searching for a 6 months
       <span class="about-text--highlight">internship</span> or a
       <span class="about-text--highlight">first job</span>, ideally
-      <span class="about-text--highlight">remotely</span>, as
+      <span class="about-text--highlight">remotely</span>, as a
       <span class="about-text--highlight">front end</span> or
       <span class="about-text--highlight">full stack</span>
       developer.<br /><br />
