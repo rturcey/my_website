@@ -15,12 +15,14 @@
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  position: relative;
+body {
+  background-color: black;
+  overflow-y: hidden;
 }
 
-body {
+.site {
+  width: 100%;
+  position: relative;
   overflow-x: hidden;
   @media screen and (min-height: 800px) {
     overflow-y: hidden;
@@ -28,10 +30,6 @@ body {
   @media screen and (max-width: 768px) {
     overflow-y: scroll;
   }
-}
-
-body {
-  background-color: black;
 }
 
 router-view {

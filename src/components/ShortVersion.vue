@@ -17,11 +17,11 @@
       <span class="about-text--highlight about-text--highlight--short"
         >Guidelines</span
       ><br />
-      discover · learn · share · be creative<br /><br />
+      discover · learn · share · create<br /><br />
       <span class="about-text--highlight about-text--highlight--short"
         >Hobbies / Interests</span
       ><br />
-      write · read · play compose & listen to music · yoga · run · cook ·
+      writing · reading · playing composing & listening to music · yoga · run · cooking ·
       ecology · design<br /><br />
     </div>
     <div>
@@ -50,8 +50,7 @@
       <span class="about-text--highlight about-text--highlight--skills"
         >soft skills:</span
       ><br />
-      good communication · adaptability · organization · critical mind · make
-      decisions · inventiveness · humility
+      good communication · adaptability · organization · critical mind · decision making · inventiveness · humility
     </div>
 
     <div class="about-techno about-techno--short">
