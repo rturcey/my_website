@@ -23,7 +23,6 @@
       background-color: darken($third-color, 15%);
     }
     &--err {
-      content: 'Error';
       background-color: $fourth-color;
       &:hover {
         background-color: $fourth-color;

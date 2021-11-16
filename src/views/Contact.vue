@@ -56,7 +56,8 @@
         @expired="callbackExpired()"
         @fail="callbackFail()"
       />
-      <input class="button button--contact-form"
+      <input :key="buttonText"
+        class="button button--contact-form"
         type="submit"
         :value="buttonText"
       />
