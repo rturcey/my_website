@@ -17,8 +17,8 @@
 
       I'm a
       <span class="about-text--highlight">self-taught</span> person, and that's
-      how I learned to compose music and play instruments. That is also why I chose
-      to train at
+      how I learned to compose music and play instruments. That is also why I
+      chose to train at
       <a
         target="_blank"
         href="https://42.fr/"
@@ -33,8 +33,8 @@
       <span class="about-text--highlight">autonomy</span> and
       <span class="about-text--highlight">self-discipline</span>.<br /><br />
 
-      Before I took this path, I was a french and literature teacher.
-      This taught me many skills that turn out useful in my code practice, such as
+      Before I took this path, I was a french and literature teacher. This
+      taught me many skills that turn out useful in my code practice, such as
       <span class="about-text--highlight">good communication</span>,
       <span class="about-text--highlight">adaptability</span> and
       <span class="about-text--highlight">organization</span> skills, having a
@@ -42,8 +42,8 @@
       <span class="about-text--highlight">making decisions</span>, solving
       problems with <span class="about-text--highlight">inventiveness</span> and
       <span class="about-text--highlight">humility</span>. My vocation has
-      always been to study and express myself with languages - my native
-      one as well as code and music.<br /><br />
+      always been to study and express myself with languages - my native one as
+      well as code and music.<br /><br />
 
       When not coding, I like to write, read, make or listen to music, run,
       practice yoga and cook. I am interested in the animal condition, ecology,

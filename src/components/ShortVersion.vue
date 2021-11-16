@@ -21,8 +21,8 @@
       <span class="about-text--highlight about-text--highlight--short"
         >Hobbies / Interests</span
       ><br />
-      writing · reading · playing composing & listening to music · yoga · run · cooking ·
-      ecology · design<br /><br />
+      writing · reading · playing composing & listening to music · yoga · run ·
+      cooking · ecology · design<br /><br />
     </div>
     <div>
       <span class="about-text--highlight about-text--highlight--short"
@@ -50,7 +50,8 @@
       <span class="about-text--highlight about-text--highlight--skills"
         >soft skills:</span
       ><br />
-      good communication · adaptability · organization · critical mind · decision making · inventiveness · humility
+      good communication · adaptability · organization · critical mind ·
+      decision making · inventiveness · humility
     </div>
 
     <div class="about-techno about-techno--short">
@@ -156,7 +157,6 @@ export default {
       return require(`../assets/${name}`);
     },
   },
-
 };
 </script>
 

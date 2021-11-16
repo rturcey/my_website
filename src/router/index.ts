@@ -25,10 +25,13 @@ const routes: Array<RouteRecordRaw> = [
     name: "Contact",
     component: Contact,
   },
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: "/",
+  },
 ];
-
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

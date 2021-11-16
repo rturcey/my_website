@@ -4,7 +4,11 @@
     <ul class="nav-links">
       <li class="nav-list" v-for="link in navLinks" :key="link.key">
         <div class="nav-link-wrapper">
-          <router-link @click="openMobileNav" class="nav-list__link" :to="link.to">
+          <router-link
+            @click="openMobileNav"
+            class="nav-list__link"
+            :to="link.to"
+          >
             {{ link.name }}
           </router-link>
         </div>
@@ -19,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import { onMounted, ref, computed, defineComponent } from 'vue';
+import { onMounted, ref, computed, defineComponent } from "vue";
 
 export default defineComponent({
   name: "Navbar",
@@ -31,8 +35,7 @@ export default defineComponent({
       const nav = document.querySelector(".nav-links");
 
       windowWidth.value = window.innerWidth;
-      if (nav)
-        nav.classList.remove("nav-links--active");
+      if (nav) nav.classList.remove("nav-links--active");
     };
 
     onMounted(() => {
@@ -40,8 +43,8 @@ export default defineComponent({
     });
 
     return {
-      width: computed(() => windowWidth.value)
-    }
+      width: computed(() => windowWidth.value),
+    };
   },
   methods: {
     openMobileNav(): void {
@@ -49,8 +52,7 @@ export default defineComponent({
       const nav = document.querySelector(".nav-links");
       const links = document.querySelectorAll(".nav-list");
 
-      if (this.width > 768)
-        return;
+      if (this.width > 768) return;
 
       if (nav) nav.classList.toggle("nav-links--active");
       for (let i = 1; i < 4 && burgerLines; ++i) {
