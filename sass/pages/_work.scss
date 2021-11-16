@@ -100,7 +100,6 @@
 .work-card__link {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -118,44 +117,17 @@
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
-  @supports not (gap: 1rem){
-    .work-card__link {
-      margin: -1rem;
-    }
-    .work-card__link > * {
-      margin: 1rem;
-    }
-  }
 }
 
 .work-card__link-img {
   width: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .work-techno {
   margin-top: 0.3rem;
   display: flex;
-  gap: 0.5rem;
   align-items: center;
-  @media screen and (max-width: 768px) {
-    gap: 0.2rem;
-    @supports not (gap: 0.2rem){
-      .work-techno {
-        margin: -0.2rem;
-      }
-      .work-techno > * {
-        margin: 0.2rem;
-      }
-    }
-  }
-  @supports not (gap: 0.5rem){
-    .work-techno {
-      margin: -0.5rem;
-    }
-    .work-techno > * {
-      margin: 0.5rem;
-    }
-  }
 }
 
 .work-techno__wrap {
@@ -168,6 +140,7 @@
   height: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  margin: 0 0.15rem;
   @media screen and (max-width: 768px) {
     margin-top: 1rem;
     width: 1rem;
