@@ -56,7 +56,8 @@
         @expired="callbackExpired()"
         @fail="callbackFail()"
       />
-      <input :key="buttonText"
+      <input
+        :key="buttonText"
         class="button button--contact-form"
         type="submit"
         :value="buttonText"
@@ -94,7 +95,6 @@ export default defineComponent({
     },
 
     sendEmail(): void {
-
       const button = document.querySelector(".button--contact-form");
 
       emailjs
@@ -107,15 +107,13 @@ export default defineComponent({
         .then(
           (res) => {
             console.log(res.text);
-            if (button)
-              button.classList.add("button--contact-form--sent");
+            if (button) button.classList.add("button--contact-form--sent");
             this.buttonText = "Sent!";
             this.resetForm(this.$refs.form as HTMLFormElement);
           },
           (err) => {
             console.log(err.text);
-            if (button)
-              button.classList.add("button--contact-form--err");
+            if (button) button.classList.add("button--contact-form--err");
             this.buttonText = "Error :-(";
           }
         );

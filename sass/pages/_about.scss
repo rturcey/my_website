@@ -13,12 +13,12 @@
   }
   @media screen and (max-width: 768px) {
     width: 450px;
-    height: 90vh;
+    height: 1000px;
     padding: 0 2rem;
     margin-top: 2rem;
   }
   @media screen and (max-width: 450px) {
-    width: 350px;
+    width: 100%;
     padding: 0;
   }
 }
@@ -88,7 +88,7 @@
   }
   @media screen and (max-width: 768px) {
     padding: 0;
-    grid-template: 70% 30% / 100%;
+    grid-template: 80% 20% / 100%;
   }
   &--short {
     text-align: left;

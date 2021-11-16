@@ -13,14 +13,14 @@
   }
   @media screen and (max-width: 768px) {
     width: 450px;
-    height: 90vh;
+    height: 600px;
     padding: 0 2rem;
     margin-top: 2rem;
-    grid-template: 40% 40% 20% / 100%;
+    grid-template: 35% 45% 20% / 100%;
   }
   @media screen and (max-width: 450px) {
-    width: 350px;
-    padding: 0;
+    width: 100%;
+    padding: 0.5rem;
   }
 }
 
@@ -50,6 +50,9 @@
       font-size: 4.5rem;
       margin: -20px 0;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 4rem;
+    }
   }
   &--coma {
     color: white;
@@ -74,6 +77,9 @@
     @media screen and (max-width: 768px) {
       font-size: 0.8rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 0.7rem;
+    }
   }
   &--job {
     @media screen and (max-width: 1024px) {
@@ -81,6 +87,9 @@
     }
     @media screen and (max-width: 768px) {
       font-size: 1.4rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 1.1rem;
     }
   }
   &--dot {
@@ -99,7 +108,7 @@
   height: auto;
   opacity: 0;
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 60%;
     border-radius: 50% 50% 50% 50%;
     justify-self: center;
   }

@@ -17,7 +17,7 @@
 
 body {
   overflow-x: hidden;
-  @media screen and (min-height: 800px){
+  @media screen and (min-height: 800px) {
     overflow-y: hidden;
   }
   @media screen and (max-width: 768px) {
