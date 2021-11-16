@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-body {
+.main-div {
   overflow-x: hidden;
   @media screen and (min-height: 800px) {
     overflow-y: hidden;
@@ -23,6 +23,10 @@ body {
   @media screen and (max-width: 768px) {
     overflow-y: scroll;
   }
+
+}
+
+body {
   background-color: black;
 }
 
