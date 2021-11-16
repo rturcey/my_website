@@ -19,9 +19,23 @@
 </template>
 
 <script lang="ts">
+import { onMounted } from 'vue';
+
 export default {
   name: "Navbar",
   props: ["name", "navLinks"],
+  setup(): void {
+  const onResize = () => {
+      const nav = document.querySelector(".nav-links");
+
+      if (nav) nav.classList.remove("nav-links--active");
+
+    };
+
+    onMounted(() => {
+      window.addEventListener("resize", onResize);
+    });
+  },
   methods: {
     openMobileNav(): void {
       const burgerLines = document.querySelectorAll(".burger__line");
