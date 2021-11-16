@@ -58,6 +58,7 @@
 }
 
 .work-card__img {
+  align-self: flex-start;
   width: 100%;
   display: block;
   border: white solid;
@@ -117,6 +118,14 @@
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+  @supports not (gap: 1rem){
+    .work-card__link {
+      margin: -1rem;
+    }
+    .work-card__link > * {
+      margin: 1rem;
+    }
+  }
 }
 
 .work-card__link-img {
@@ -130,6 +139,22 @@
   align-items: center;
   @media screen and (max-width: 768px) {
     gap: 0.2rem;
+    @supports not (gap: 0.2rem){
+      .work-techno {
+        margin: -0.2rem;
+      }
+      .work-techno > * {
+        margin: 0.2rem;
+      }
+    }
+  }
+  @supports not (gap: 0.5rem){
+    .work-techno {
+      margin: -0.5rem;
+    }
+    .work-techno > * {
+      margin: 0.5rem;
+    }
   }
 }
 

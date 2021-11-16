@@ -54,6 +54,14 @@
   @media screen and (max-width: 768px) {
     margin-top: 0.5rem;
   }
+  @supports not (gap: 0.7rem){
+    .about-socials {
+      margin: -0.7rem;
+    }
+    .about-socials > * {
+      margin: 0.7rem;
+    }
+  }
 }
 
 .about-selector {
@@ -206,6 +214,14 @@
   justify-content: center;
   gap: 0.7rem;
   align-items: center;
+  @supports not (gap: 0.7rem){
+    .about-techno-icons {
+      margin: -0.7rem;
+    }
+    .about-techno-icons > * {
+      margin: 0.7rem;
+    }
+  }
 }
 
 .about-techno__wrap {
