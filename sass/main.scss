@@ -15,15 +15,21 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   background-color: black;
+}
+
+body {
+  height: 100vh;
   overflow-y: hidden;
 }
 
 .site {
+  height: 100%;
   width: 100%;
   position: relative;
   overflow-x: hidden;
+  overflow-y: initial;
   @media screen and (min-height: 800px) {
     overflow-y: hidden;
   }

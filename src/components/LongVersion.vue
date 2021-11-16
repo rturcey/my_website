@@ -4,20 +4,20 @@
       I'm a 27 years old french junior developer, and I live in Bayonne. I'm
       searching for a 6 months
       <span class="about-text--highlight">internship</span> or a
-      <span class="about-text--highlight">first job</span>, ideally in
-      <span class="about-text--highlight">remote</span>, as
+      <span class="about-text--highlight">first job</span>, ideally
+      <span class="about-text--highlight">remotely</span>, as
       <span class="about-text--highlight">front end</span> or
       <span class="about-text--highlight">full stack</span>
       developer.<br /><br />
       I love to <span class="about-text--highlight">discover</span>,
       <span class="about-text--highlight">learn</span>,
-      <span class="about-text--highlight">share</span>, express myself with
-      <span class="about-text--highlight">creativity</span>. Code is one of my
+      <span class="about-text--highlight">share</span> and express myself with
+      <span class="about-text--highlight">creativity</span>. Coding is one of my
       favorite ways to do that.<br /><br />
 
       I'm a
       <span class="about-text--highlight">self-taught</span> person, and that's
-      how I learned to compose music, play instruments, and that's why I chose
+      how I learned to compose music and play instruments. That is also why I chose
       to train at
       <a
         target="_blank"
@@ -25,7 +25,7 @@
         class="about-text--highlight about-text__link"
         >42 school</a
       >
-      in Paris since 2019, where programming is taught by practical lessons,
+      in Paris since 2019, where programming is taught with practical lessons,
       based on the principles of
       <span class="about-text--highlight">sharing</span>,
       <span class="about-text--highlight">collaboration</span> and
@@ -33,16 +33,16 @@
       <span class="about-text--highlight">autonomy</span> and
       <span class="about-text--highlight">self-discipline</span>.<br /><br />
 
-      Before I tooke this path, I was a french and literature teacher, and it
-      teached me many skills that I find usefull in my code practice, as
+      Before I took this path, I was a french and literature teacher.
+      This taught me many skills that turn out useful in my code practice, such as
       <span class="about-text--highlight">good communication</span>,
       <span class="about-text--highlight">adaptability</span> and
       <span class="about-text--highlight">organization</span> skills, having a
       <span class="about-text--highlight">critical mind</span> and
-      <span class="about-text--highlight">make decisions</span>, solving
+      <span class="about-text--highlight">making decisions</span>, solving
       problems with <span class="about-text--highlight">inventiveness</span> and
       <span class="about-text--highlight">humility</span>. My vocation has
-      always been to express myself with languages, and study them - my native
+      always been to study and express myself with languages - my native
       one as well as code and music.<br /><br />
 
       When not coding, I like to write, read, make or listen to music, run,
