@@ -87,7 +87,7 @@
   font-family: $main-font;
   font-size: 1.1rem;
   padding: 2rem;
-  opacity: 0;
+  opacity: 1;
   height: 100%;
   @media screen and (max-width: 1024px) {
     padding: 2rem 4rem;
@@ -118,7 +118,7 @@
     display: inline-block;
     font-weight: bold;
     color: $second-color;
-    opacity: 0;
+    opacity: 1;
     &--skills {
       text-transform: uppercase;
       color: $primary-color;
@@ -242,7 +242,7 @@
   min-width: 100%;
   width: 100%;
   height: auto;
-  opacity: 0;
+  opacity: 1;
   &:hover {
     min-width: 120%;
     transition: min-width 0.3s ease;

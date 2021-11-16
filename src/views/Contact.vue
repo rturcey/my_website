@@ -148,15 +148,6 @@ export default defineComponent({
   },
   mounted: function (): void {
     const form = document.querySelector(".contact-form-wrap");
-    const social = document.querySelectorAll(".about__img--social");
-
-    social.forEach((icon, index) => {
-      icon.setAttribute("style", "");
-      icon.setAttribute(
-        "style",
-        `animation: leftFade 2s ease forwards ${index / 7}s`
-      );
-    });
 
     if (form) {
       form.setAttribute("style", "");

@@ -110,17 +110,6 @@ export default defineComponent({
       long: false,
     };
   },
-  mounted: function (): void {
-    const social = document.querySelectorAll(".about__img--social");
-
-    social.forEach((icon, index) => {
-      icon.setAttribute("style", "");
-      icon.setAttribute(
-        "style",
-        `animation: leftFade 2s ease forwards ${index / 7}s`
-      );
-    });
-  },
   methods: {
     getImgUrl(name: string): string {
       return require(`../assets/${name}`);

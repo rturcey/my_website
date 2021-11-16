@@ -117,6 +117,14 @@ interface State {
 
 export default {
   name: "ShortVersion",
+  mounted: function (): void {
+    const text = document.querySelector(".about-text");
+
+    if (text) {
+      text.setAttribute("style", "");
+      text.setAttribute("style", "animation: fade 1s ease forwards");
+    }
+  },
   data(): State {
     return {
       frontIcons: [
@@ -148,52 +156,7 @@ export default {
       return require(`../assets/${name}`);
     },
   },
-  mounted: function (): void {
-    const front = document.querySelectorAll(".about__img--front");
-    const back = document.querySelectorAll(".about__img--back");
-    const misc = document.querySelectorAll(".about__img--misc");
-    const texts = document.querySelectorAll(".about-text");
-    const highlights = document.querySelectorAll(".about-text--highlight");
 
-    texts.forEach((text) => {
-      text.setAttribute("style", `animation: fade 4s ease forwards`);
-    });
-
-    highlights.forEach((text, index) => {
-      if (index % 4 == 1)
-        text.setAttribute("style", `animation: leftFade 2s ease forwards`);
-      else if (index % 4 == 2)
-        text.setAttribute("style", `animation: rightFade 2s ease forwards`);
-      else if (index % 4 == 3)
-        text.setAttribute("style", `animation: bottomFade 2s ease forwards`);
-      else if (index % 4 == 0)
-        text.setAttribute("style", `animation: topFade 2s ease forwards`);
-    });
-
-    front.forEach((icon, index) => {
-      icon.setAttribute("style", "");
-      icon.setAttribute(
-        "style",
-        `animation: leftFade 2s ease forwards ${(front.length - index) / 7}s`
-      );
-    });
-
-    back.forEach((icon, index) => {
-      icon.setAttribute("style", "");
-      icon.setAttribute(
-        "style",
-        `animation: bottomFade 2s ease forwards ${index / 7}s`
-      );
-    });
-
-    misc.forEach((icon, index) => {
-      icon.setAttribute("style", "");
-      icon.setAttribute(
-        "style",
-        `animation: rightFade 2s ease forwards ${index / 7}s`
-      );
-    });
-  },
 };
 </script>
 
