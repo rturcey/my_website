@@ -19,28 +19,38 @@
 </template>
 
 <script lang="ts">
-import { onMounted } from 'vue';
+import { onMounted, ref, computed, defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   name: "Navbar",
   props: ["name", "navLinks"],
-  setup(): void {
-  const onResize = () => {
+  setup() {
+    const windowWidth = ref(window.innerWidth);
+
+    const onResize = () => {
       const nav = document.querySelector(".nav-links");
 
-      if (nav) nav.classList.remove("nav-links--active");
-
+      windowWidth.value = window.innerWidth;
+      if (nav)
+        nav.classList.remove("nav-links--active");
     };
 
     onMounted(() => {
       window.addEventListener("resize", onResize);
     });
+
+    return {
+      width: computed(() => windowWidth.value)
+    }
   },
   methods: {
     openMobileNav(): void {
       const burgerLines = document.querySelectorAll(".burger__line");
       const nav = document.querySelector(".nav-links");
       const links = document.querySelectorAll(".nav-list");
+
+      if (this.width > 768)
+        return;
 
       if (nav) nav.classList.toggle("nav-links--active");
       for (let i = 1; i < 4 && burgerLines; ++i) {
@@ -58,7 +68,7 @@ export default {
       });
     },
   },
-};
+});
 </script>
 
 <style lang="scss"></style>
